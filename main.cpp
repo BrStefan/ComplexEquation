@@ -15,7 +15,6 @@ class Numar_Complex
 		friend const Numar_Complex operator - (const Numar_Complex&, const Numar_Complex&);
 		friend const Numar_Complex operator * (const Numar_Complex&, const Numar_Complex&);
 		friend const Numar_Complex operator / (const Numar_Complex&, const Numar_Complex&);
-		friend bool operator > (const Numar_Complex&, const Numar_Complex&);
 		friend bool operator == (const Numar_Complex&, const Numar_Complex&);
 		friend bool operator != (const Numar_Complex&, const Numar_Complex&);
 		void vector(istream&,ostream&);
@@ -156,12 +155,6 @@ bool operator==(const Numar_Complex& x,const Numar_Complex& y)
 bool operator!=(const Numar_Complex& x,const Numar_Complex& y)
 {
 	if(x.real==y.real && x.imaginar==y.imaginar)return false;
-	return true;
-}
-
-bool operator>(const Numar_Complex& x,const Numar_Complex& y)
-{
-	
 	return true;
 }
 
